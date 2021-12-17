@@ -1,0 +1,111 @@
+body > * {
+  font-family: Noto Sans CJK KR;
+  font-style: normal;
+}
+
+.wrap {
+  width: 375px;
+  height: 812px;
+  background-color: #eeebe5;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+header {
+  width: 327px;
+  height: 43px;
+  margin: 11px 24px;
+}
+.status-bar > img {
+  width: 375px;
+  height: 44px;
+}
+.title-bar {
+  display: flex;
+}
+.title-bar > .profile-img {
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.title-bar > .profile-img > img {
+  height: 43px;
+  width: 43px;
+}
+.title-bar > .subject {
+  font-size: 18px;
+  font-weight: 500;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.title-bar > .icons {
+  display: flex;
+  align-items: center;
+}
+.title-bar > .icons img {
+  width: 24px;
+  height: 24px;
+}
+.title-bar > .icons a + a {
+  margin-left: 18px;
+}
+/* .account-info > .container {
+  margin-top: 22px;
+  margin: 22px 48px;
+  background: #ffffff;
+  box-shadow: 0px 0px 16px rgba(226, 191, 66, 0.19);
+  border-radius: 12px;
+
+  position: relative;
+
+  width: 279px;
+  height: 155px;
+}
+.account-info > .container > div {
+  border: 2px solid tomato;
+  display: flex;
+  height: 45px;
+  width: 100%;
+}
+.account-info > .container > div > .account-number {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #858585;
+
+  position: absolute;
+
+  left: 26.16%;
+  right: 25.26%;
+  top: 9.03%;
+  bottom: 77.42%;
+}
+.account-info > .container > div > .account-transfer-btn {
+  position: absolute;
+  width: 30px;
+  height: 21px;
+  left: 236px;
+  top: 14px;
+
+  font-family: Noto Sans CJK KR;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+
+  text-align: center;
+  letter-spacing: -0.24px;
+
+  color: #000000;
+}
+.account-info .container > .money {
+  height: 30px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.account-info .budget-amount {
+  font-size: 2.4rem;
+  font-weight: 600;
+} */
