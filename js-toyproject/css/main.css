@@ -1,5 +1,5 @@
 body > * {
-  font-family: Noto Sans CJK KR;
+  font-family: "Noto Sans KR", sans-serif;
   font-style: normal;
 }
 
@@ -51,7 +51,7 @@ header {
 .title-bar > .icons a + a {
   margin-left: 18px;
 }
-/* .account-info > .container {
+.account-info > .container {
   margin-top: 22px;
   margin: 22px 48px;
   background: #ffffff;
@@ -64,7 +64,7 @@ header {
   height: 155px;
 }
 .account-info > .container > div {
-  border: 2px solid tomato;
+  border: 1px solid tomato;
   display: flex;
   height: 45px;
   width: 100%;
@@ -89,8 +89,6 @@ header {
   left: 236px;
   top: 14px;
 
-  font-family: Noto Sans CJK KR;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
@@ -100,12 +98,41 @@ header {
 
   color: #000000;
 }
-.account-info .container > .money {
-  height: 30px;
-  font-size: 1.4rem;
-  font-weight: 600;
+.account-info > .container > .money {
+  height: 36px;
 }
-.account-info .budget-amount {
-  font-size: 2.4rem;
-  font-weight: 600;
-} */
+.account-info > .container > .money > span {
+  font-weight: 500;
+
+  align-items: center;
+  text-align: center;
+
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.account-info > .container > .money > span > .budget-amount {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+.account-info > .container > .graph {
+  height: 33px;
+}
+.account-info > .container > .graph > .expense-management-btn > * {
+  width: 14px;
+  height: 14px;
+}
+.account-info > .container > .remain-info {
+  height: 35px;
+}
+.account-info > .container > .remain-info > span {
+  font-weight: 500;
+  color: #858585;
+
+  align-items: center;
+  text-align: center;
+
+  left: 0;
+  right: 0;
+  margin: auto;
+}
