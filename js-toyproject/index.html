@@ -16,6 +16,19 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"
+      integrity="sha512-gWlyRVDsJvp5kesJt4cSdPPLZIBdln/uSwzYgUicQcbTgRNQE4QhP5KUBIYlLYLkiKIQiuD7KUMHzqGNW/D2bQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollToPlugin.min.js"
+      integrity="sha512-1xdGCuWYeijTaeifNNPc5UbPTZ3KCRZ5jdXNvNg59DeXnRPoLNS/V+q7u6yPHKGqN7LzXSZtUn3GFKoz/79a8g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <link rel="stylesheet" href="./css/main.css" />
     <title>KDT BANK</title>
   </head>
@@ -82,7 +95,9 @@
           <aside class="ad"></aside>
 
           <div class="usage-history">
-            <div class="updown-scrollbar"></div>
+            <div class="updown-scrollbar">
+              <a href="javascript:void(0)"></a>
+            </div>
             <div class="coin-box-slidebar">
               <ul>
                 <li class="slide-item1">
@@ -93,38 +108,25 @@
                     <span>842,200원</span>
                   </div>
                 </li>
-                <li class="slide-item2"></li>
-              </ul>
-              <button></button>
-            </div>
-            <div class="daily-usage">
-              <div>
-                <span class="date">오늘</span>
-                <span><span class="amount">127,600</span>원 지출</span>
-              </div>
-              <ul class="usage-list">
-                <li>
-                  <span class="title">미스터피자</span>
-                  <span class="cost">32,000</span>
+                <li class="slide-item2">
+                  <div></div>
+                  <div></div>
+                  <div class="text-group">
+                    <span>냉장고사기</span><br />
+                    <span>142,200원</span>
+                  </div>
                 </li>
-                <li>
-                  <span class="title">택시</span>
-                  <span class="cost">4,800</span>
-                </li>
-                <li>
-                  <span class="title">이마트</span>
-                  <span class="cost">86,000</span>
-                </li>
-                <li>
-                  <span class="title">스타벅스</span>
-                  <span class="cost">4,800</span>
-                </li>
-                <li>
-                  <span class="title">전길수</span>
-                  <span class="cost">+20,000</span>
+                <li class="add-coin-box">
+                  <div>
+                    <img src="./images/add.png" alt="저금통 만들기" /><a
+                      href="javascript:void(0)"
+                      >저금통 만들기</a
+                    >
+                  </div>
                 </li>
               </ul>
             </div>
+            <div class="daily-usage"></div>
           </div>
         </section>
       </main>
@@ -145,9 +147,6 @@
         </ul>
       </nav>
     </div>
-
-    <div class="img">
-      <img src="./images/홈화면 (1).png" alt="" />
-    </div>
   </body>
+  <script src="./js/script.js"></script>
 </html>

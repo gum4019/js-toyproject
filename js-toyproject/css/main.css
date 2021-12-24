@@ -4,6 +4,8 @@ body > * {
 }
 
 .wrap {
+  position: relative;
+
   width: 375px;
   height: 812px;
   background-color: #eeebe5;
@@ -11,8 +13,9 @@ body > * {
   right: 0;
   margin: 0 auto;
 
-  position: relative;
+  overflow: hidden;
 }
+
 header {
   width: 327px;
   height: 43px;
@@ -114,11 +117,45 @@ header {
   letter-spacing: 2px;
 }
 .account-info > .container > .graph {
+  position: relative;
   height: 33px;
+}
+.account-info > .container > .graph > .remain-graph > .whole-area-bar {
+  width: 202px;
+  height: 6px;
+
+  background-color: #c4c4c4;
+  border-radius: 3px;
+}
+.account-info
+  > .container
+  > .graph
+  > .remain-graph
+  > .whole-area-bar
+  > .color-area-bar {
+  width: 128px;
+  height: 6px;
+
+  background-color: #ffdb4c;
+  border-radius: 3px 0px 0px 3px;
+}
+.account-info > .container > .graph > .remain-graph > .goal-bar {
+  position: absolute;
+  width: 4px;
+  height: 17px;
+
+  margin-left: 154px;
+  margin-top: -13px;
+
+  background-color: #ff5f00;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
 }
 .account-info > .container > .graph > .expense-management-btn > * {
   width: 14px;
   height: 14px;
+
+  margin-left: 12px;
 }
 .account-info > .container > .remain-info {
   height: 30px;
@@ -136,7 +173,7 @@ header {
   position: absolute;
 
   width: 375px;
-  height: 383px;
+  height: 100%;
 
   top: 352px;
 
@@ -146,8 +183,18 @@ header {
 
   box-shadow: 0px -5px 14px rgba(189, 144, 28, 0.08);
   border-radius: 30px 30px 0px 0px;
+
+  transition: top 0.5s;
 }
 .usage-history > .updown-scrollbar {
+  position: relative;
+  width: 100%;
+  padding: 7px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.usage-history > .updown-scrollbar::after {
+  content: "";
   position: absolute;
 
   width: 48px;
@@ -155,7 +202,7 @@ header {
   background: #c4c4c4;
   border-radius: 4px;
 
-  top: 4px;
+  margin-top: 4px;
 
   left: 0;
   right: 0;
@@ -168,25 +215,100 @@ header {
   left: 0;
   right: 0;
   margin: 23px 33px 0;
+
+  display: flex;
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.usage-history > .coin-box-slidebar::-webkit-scrollbar {
+  display: none;
 }
 .usage-history > .coin-box-slidebar > ul {
+  width: 455px;
+  height: 47px;
+
+  display: flex;
 }
 .usage-history > .coin-box-slidebar > ul > li {
+  position: relative;
+}
+.usage-history > .coin-box-slidebar > ul > li ~ li {
+  margin-left: 13px;
+}
+.usage-history > .coin-box-slidebar > ul > li > div:nth-child(1) {
   width: 162px;
   height: 47px;
+  background: #dadada;
+  border-radius: 6px;
+}
+.usage-history > .coin-box-slidebar > ul > li > div:nth-child(2) {
+  position: absolute;
+
+  width: 97px;
+  height: 47px;
+  top: 0;
+  left: 0;
+
+  background-color: #ff5f00;
+  border-radius: 6px 0px 0px 6px;
+}
+.usage-history > .coin-box-slidebar > ul > li:nth-child(2) > div:nth-child(2) {
+  background-color: #feb700;
+}
+.usage-history > .coin-box-slidebar > ul > li > .text-group {
+  position: absolute;
+
+  top: 5px;
+  left: 13px;
+
+  font-weight: 500px;
+  font-size: 12px;
+  line-height: 18px;
+
+  color: #ffffff;
+}
+.usage-history > .coin-box-slidebar > ul > .add-coin-box > div {
+  background: #f5f5f5 !important;
+
+  display: flex;
+  align-items: center;
+}
+.usage-history > .coin-box-slidebar > ul > li > div > img {
+  width: 24px;
+  height: 24px;
+}
+.usage-history > .coin-box-slidebar > ul > li > div > a {
+  width: 100%;
+  height: 18px;
+
+  margin-left: 6px;
+
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+
+  color: #ff5f00;
 }
 .usage-history > .daily-usage {
   position: relative;
   width: 302px;
-  height: 709px;
+  height: 100%;
 
   margin: 16px 36px;
 
-  /* border: 2px solid tomato; */
+  overflow-y: scroll;
+}
+.usage-history > .daily-usage::-webkit-scrollbar {
+  display: none;
 }
 .usage-history > .daily-usage > div {
   width: 302px;
   height: 21px;
+}
+.usage-history > .daily-usage > div ~ div {
+  margin-top: 38px;
 }
 .usage-history > .daily-usage > div > span {
   float: right;
@@ -236,7 +358,16 @@ header {
 
   font-weight: 300;
 }
+.usage-history > .daily-usage > ul > li > .cost {
+  position: absolute;
 
+  right: 0;
+
+  font-weight: 300;
+}
+.usage-history > .daily-usage > ul > li > .in {
+  color: #ff5f00;
+}
 nav {
   position: absolute;
 
